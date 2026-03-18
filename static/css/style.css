@@ -363,3 +363,11 @@ body {
 .about-photo:hover {
     transform: scale(1.03);
 }
+
+.success-message {
+  color: #0f0;
+  background: #222;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}

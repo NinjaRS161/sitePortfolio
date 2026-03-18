@@ -28,7 +28,12 @@
         
         <div class="contact-form">
             <h2>Форма обратной связи</h2>
-            <form action="#" method="POST">
+{% if message_sent %}
+<div class="success-message">
+    Сообщение отправлено ✅
+</div>
+{% endif %}
+            <form action="/contacts" method="POST">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Ваше имя" required>
                 </div>
