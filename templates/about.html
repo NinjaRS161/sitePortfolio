@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Обо мне{% endblock %}
+
+{% block content %}
+<section class="about">
+    <h1>Обо мне</h1>
+    
+    <div class="about-content">
+        <div class="about-text">
+            <h2>Привет! Я Артём</h2>
+            <p>Я учусь в 9 классе и увлекаюсь программированием. Мой путь в IT начался с изучения Python, и теперь я активно развиваюсь в веб-разработке.</p>
+            
+            <h3>Мое образование</h3>
+            <p>Ученик 9 класса школы № 82. Активно изучаю программирование.</p>
+            
+            <h3>Мои интересы</h3>
+            <ul>
+                <li>Веб-разработка</li>
+                <li>Искусственный интеллект</li>
+                <li>Кибербезопасность</li>
+                <li>Спорт и активный отдых</li>
+            </ul>
+        </div>
+        
+    <div class="about-image">
+    <img src="{{ url_for('static', filename='images/QW.jpg') }}" 
+         alt="Фото Артёма"
+         class="about-photo">
+</div>
+
+    </div>
+</section>
+{% endblock %}

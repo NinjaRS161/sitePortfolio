@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<section class="contacts">
+    <h1>Свяжитесь со мной</h1>
+    
+    <div class="contacts-content">
+        <div class="contact-info">
+            <h2>Мои контакты</h2>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>artem001boldyrev@mail.ru</p>
+            </div>
+            <div class="contact-item">
+                <h3>Телефон</h3>
+                <p>+7 (950) 854-33-08</p>
+            </div>
+            <div class="contact-item">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#" class="https://web.telegram.org/a/#5011530740">Telegram</a>
+                    <a href="#" class="https://github.com/NinjaRS161">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Форма обратной связи</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить сообщение</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
